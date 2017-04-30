@@ -1,14 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DrumPad" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +19,121 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="how-kk-99A">
+                                <rect key="frame" x="16" y="96" width="168" height="168"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.156785652" green="0.33144357800000002" blue="0.92951059339999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="f5s-TL-7JA" appends="YES" id="Zga-Ov-CYD"/>
+                                </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="06l-hg-Lhd">
+                                <rect key="frame" x="16" y="268" width="168" height="168"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.29926747122913128" green="0.92951059339999997" blue="0.33050449065227411" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ofo-zg-j2D" appends="YES" id="ZMJ-Ye-5Oi"/>
+                                </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="csj-94-b4I">
+                                <rect key="frame" x="191" y="268" width="168" height="168"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92951059339999997" green="0.72206235527393403" blue="0.0012516258738446394" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Q6Q-Ij-D7s" appends="YES" id="xKE-Sp-foA"/>
+                                </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pxz-5p-xDv">
+                                <rect key="frame" x="16" y="441" width="168" height="168"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.082462855528621828" green="0.92951059339999997" blue="0.86216125854409098" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="w1j-wt-Osg" appends="YES" id="fgu-VQ-VGC"/>
+                                </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="6" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z6E-Mg-8fv">
+                                <rect key="frame" x="191" y="441" width="168" height="168"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92951059339999997" green="0.11876588794192164" blue="0.81539960085683916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="P0S-CW-CFr" appends="YES" id="9hd-lM-Vjx"/>
+                                </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ybC-yU-qRp">
+                                <rect key="frame" x="191" y="96" width="168" height="168"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92951059339999997" green="0.13508765440000001" blue="0.13501966900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="lt2-o4-ABd" appends="YES" id="l87-Sd-29q"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pst-Co-hgm">
+                                <rect key="frame" x="13" y="615" width="115" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Change Theme"/>
+                                <connections>
+                                    <action selector="customizeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5wP-gd-OTw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DrumSwift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTQ-v5-uQj">
+                                <rect key="frame" x="16" y="20" width="343" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="52"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="drumFive" destination="pxz-5p-xDv" id="28k-hA-y1X"/>
+                        <outlet property="drumFour" destination="csj-94-b4I" id="A3t-MC-cho"/>
+                        <outlet property="drumOne" destination="how-kk-99A" id="ehu-FD-Plp"/>
+                        <outlet property="drumSix" destination="Z6E-Mg-8fv" id="RZf-AW-mYT"/>
+                        <outlet property="drumThree" destination="06l-hg-Lhd" id="X9k-x0-g0J"/>
+                        <outlet property="drumTwo" destination="ybC-yU-qRp" id="loo-iD-DJA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="f5s-TL-7JA">
+                    <connections>
+                        <action selector="drumOnePressed:" destination="BYZ-38-t0r" id="7O0-DR-8nb"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="ofo-zg-j2D">
+                    <connections>
+                        <action selector="drumThreePressed:" destination="BYZ-38-t0r" id="uSC-Bd-sVH"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="w1j-wt-Osg">
+                    <connections>
+                        <action selector="drumFivePressed:" destination="BYZ-38-t0r" id="0xh-xt-zZs"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="lt2-o4-ABd">
+                    <connections>
+                        <action selector="drumTwoPressed:" destination="BYZ-38-t0r" id="NG5-zG-seb"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Q6Q-Ij-D7s">
+                    <connections>
+                        <action selector="drumFourPressed:" destination="BYZ-38-t0r" id="gzK-Pg-Pys"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="P0S-CW-CFr">
+                    <connections>
+                        <action selector="drumSixPressed:" destination="BYZ-38-t0r" id="9wU-Jh-OoU"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="-273" y="207"/>
         </scene>
     </scenes>
 </document>

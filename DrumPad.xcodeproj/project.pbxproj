@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B919B0E91EB3B6D500CA055A /* SoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B919B0E81EB3B6D500CA055A /* SoundsViewController.swift */; };
+		B919B0EB1EB3C43000CA055A /* ThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B919B0EA1EB3C43000CA055A /* ThemeViewController.swift */; };
 		B9FA58151EAEA3B900A3E1D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FA58141EAEA3B900A3E1D8 /* AppDelegate.swift */; };
 		B9FA58171EAEA3B900A3E1D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FA58161EAEA3B900A3E1D8 /* ViewController.swift */; };
 		B9FA581A1EAEA3B900A3E1D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9FA58181EAEA3B900A3E1D8 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B919B0E81EB3B6D500CA055A /* SoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundsViewController.swift; sourceTree = "<group>"; };
+		B919B0EA1EB3C43000CA055A /* ThemeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeViewController.swift; sourceTree = "<group>"; };
 		B9FA58111EAEA3B900A3E1D8 /* DrumPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrumPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9FA58141EAEA3B900A3E1D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9FA58161EAEA3B900A3E1D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 			children = (
 				B9FA58141EAEA3B900A3E1D8 /* AppDelegate.swift */,
 				B9FA58161EAEA3B900A3E1D8 /* ViewController.swift */,
+				B919B0E81EB3B6D500CA055A /* SoundsViewController.swift */,
+				B919B0EA1EB3C43000CA055A /* ThemeViewController.swift */,
 				B9FA58181EAEA3B900A3E1D8 /* Main.storyboard */,
 				B9FA581B1EAEA3B900A3E1D8 /* Assets.xcassets */,
 				B9FA581D1EAEA3B900A3E1D8 /* LaunchScreen.storyboard */,
@@ -139,6 +145,8 @@
 			files = (
 				B9FA58171EAEA3B900A3E1D8 /* ViewController.swift in Sources */,
 				B9FA58151EAEA3B900A3E1D8 /* AppDelegate.swift in Sources */,
+				B919B0EB1EB3C43000CA055A /* ThemeViewController.swift in Sources */,
+				B919B0E91EB3B6D500CA055A /* SoundsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +273,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E4G8GEX59A;
 				INFOPLIST_FILE = DrumPad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.annibale.DrumPad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -278,6 +287,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E4G8GEX59A;
 				INFOPLIST_FILE = DrumPad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.annibale.DrumPad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,6 +314,7 @@
 				B9FA58251EAEA3B900A3E1D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
