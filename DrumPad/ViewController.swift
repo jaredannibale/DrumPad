@@ -10,12 +10,12 @@ import UIKit
 import AVFoundation
 
 
-var themes = [Theme]()
-
 struct Theme {
     var name: String
     var colors: [UIColor]
 }
+
+var themes = [Theme]()
 
 let bostonCollege = Theme(name: "Boston College", colors: [
     UIColor.init(red: 128/255, green: 0/255, blue: 0/255, alpha: 1),
@@ -57,6 +57,7 @@ let salmonTheme = Theme(name: "Salmon", colors: [
 ])
 
 class ViewController: UIViewController {
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var drumOne: UIImageView!
     @IBOutlet weak var drumTwo: UIImageView!
     @IBOutlet weak var drumThree: UIImageView!
@@ -229,6 +230,7 @@ class ViewController: UIViewController {
     
     func updateColors(selectedTheme: Theme) {
         
+        
         var index = 1
         for color in selectedTheme.colors {
             
@@ -251,10 +253,21 @@ class ViewController: UIViewController {
         
         self.selectedTheme = selectedTheme
         
-        print("Theme is now \(selectedTheme)")
+        if selectedTheme.name == "Boston College" {
+            titleLabel.textColor =  UIColor.init(red: 128/255, green: 0/255, blue: 0/255, alpha: 1)
+        } else if selectedTheme.name == "Classic Black" {
+            titleLabel.textColor = UIColor.black
+        } else if selectedTheme.name == "Rainbow" {
+            titleLabel.textColor = UIColor.red
+        } else if selectedTheme.name == "Ocean" {
+            titleLabel.textColor = UIColor.blue
+        } else if selectedTheme.name == "Salmon" {
+            titleLabel.textColor =  UIColor.init(red: 250/255, green: 128/255, blue: 114/255, alpha: 1)
+        }
         
-        
+       
     }
+
     
     func longPress(recognizer: UILongPressGestureRecognizer) {
         
